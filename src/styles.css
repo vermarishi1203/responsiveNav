@@ -1,0 +1,119 @@
+.App {
+  font-family: sans-serif;
+}
+body {
+  margin: 0px;
+}
+button {
+  border-radius: 0.2rem;
+  border-style: none;
+  padding: 0.2rem 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  margin: 0px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+header {
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center;
+  justify-content: center;
+}
+.mobile-nav > button {
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.desktop-nav {
+  display: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.intro h1 {
+  margin: 1rem 0px 0px 0px;
+}
+.intro > p {
+  padding: 0px 1rem;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projects > article {
+  margin: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: grey;
+}
+.projects p {
+  padding: 0px 1rem;
+}
+.projects h3 {
+  padding: 0px 1rem;
+}
+
+footer {
+  background-color: grey;
+  text-align: center;
+  margin: 1rem 0px 0px 0px;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 0.5rem 17rem;
+  }
+  header > cite {
+    margin: 0.5rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+  }
+  .desktop-nav > a {
+    margin: 0.5rem;
+  }
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+  .projects {
+    flex-direction: row;
+  }
+  .projects h1 {
+    display: none;
+  }
+}
